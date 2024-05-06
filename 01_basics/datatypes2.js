@@ -39,3 +39,32 @@ Return type of variables in JavaScript
     Function  =>  function
     Object  =>  object
 */
+
+// -------------------------Memory--------------------------
+
+/*
+Memory 2 types.... 1=> Stack (primitive) 2=> Heap(Non Primitive)
+*/
+
+console.log("Stack Examples!----->");
+
+let Name = "Aref";
+let anotherName = Name; ///In this line it made a copy of Name. 
+anotherName = "Tawsif"///Then it will change to another name. Thus it is a copy version. so changes will not impact on main versions.
+
+console.log(Name); //Aref
+console.log(anotherName);//Tawsif
+
+console.log("Heap Examples------------->");
+
+let user1 = {
+    email : "sajedullah@gmail.com",
+    age : 21,
+}
+
+let user2 = user1 ///Here it give the reference of main version. So if any changes happpen in user2 or user1 then it will also change in user1 cause both are in same reference or address!!
+
+user2.email = "sajedullah_aref_104@yahoo.com"
+
+console.log(user1.email);//sajedullah_aref_104@yahoo.com
+console.log(user2.email);//sajedullah_aref_104@yahoo.com
