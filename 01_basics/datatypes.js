@@ -18,4 +18,4 @@ let isOk = true
 console.table([Name,age,isOk]);
 
 console.log(typeof null) // Output : Object 
-console.log(typeof undefined);
+console.log(typeof undefined); // Output : undefined
