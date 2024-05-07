@@ -37,3 +37,4 @@ const score1 = 100
 const score2 = 200
 const score3 = 300
 console.log(Array.of(score1,score2,score3)); // instead of from we can use .of function whcih also convert multiple things into a string
+// o/p : [ 100, 200, 300 ]
