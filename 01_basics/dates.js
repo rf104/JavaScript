@@ -50,7 +50,7 @@ console.log(newDate.getDate());
 console.log(newDate.getDay());
 console.log(newDate.getMinutes());
 
-newDate.toLocaleString('default'{
-    weekday:'long'
+/*newDate.toLocaleString('default'{
+    weekday:'long',
 })
-
+*/
