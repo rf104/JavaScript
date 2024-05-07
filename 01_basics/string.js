@@ -36,4 +36,4 @@ console.log(url.includes("Aref"));///Boolean ans will provide.By using this we c
 
 let str4 = "aref-104-sajedullah"
 
-console.log(str4.split("-"));
+console.log(str4.split("-"));///there will create array. but it split the string based on '-' 
