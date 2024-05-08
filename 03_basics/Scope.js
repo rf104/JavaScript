@@ -1,4 +1,4 @@
-
+/*
 if(1){
     let a = 10;
     const b = 20;
@@ -13,3 +13,36 @@ if(true){
 }
 
 console.log("Global Scope : ",a);//10
+*/
+
+function one(){
+    const username = "aref"
+
+    function two(){
+        const web = "facebook"
+        console.log(username);
+    }
+
+    //console.log(web);// this is out of the scope thats why it will give error
+
+    two()
+}
+
+//one()
+
+//// Hoisting 
+
+console.log(addOne(4)); /// This will work though its before its function
+function addOne(num1){
+    return num1 + 1 ;
+}
+
+//console.log(addOne(4)); /// this will also work
+
+
+///console.log(addTwo(3)); // this will not work 
+const addTwo = function(num1){
+    return num1+2;
+}
+
+console.log(addTwo(3)); ///5    this will work 
