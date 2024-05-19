@@ -23,4 +23,6 @@ for(let i = 1;i<=10;i++)
                 continue /// it will stop for this perticular i then it will work rest of his loop
             }
             console.log(`Value of i is ${i}`);
+
+            //*Thusar
         }
