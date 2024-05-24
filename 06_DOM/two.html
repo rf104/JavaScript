@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <div class="parent">
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+    </div>
+</body>
+<script>
+    const par = document.querySelector('.parent')  ///par er modde shob child store 
+    // console.log(par);
+    // console.log(par.children); /// all child were shown. returntype was HTMLCollection which is almost array like property
+    // console.log(par.children[0]) ///  <div class="day">Sunday</div>
+    // console.log(par.children[0].innerHTML)
+
+    for(let i = 0;i<par.children.length;i++)
+    {
+        //console.log(par.children[i].innerHTML)
+        par.children[i].style.color = "orange" // sob element er color change
+    }
+    //parent to Child move 
+    // console.log(par.firstElementChild) //  <div class="day">Sunday</div> karon eitai 1st child
+    // console.log(par.lastElementChild) //  <div class="day">wednesday</div> karon eitai 1st child
+    // console.log(par.firstElementChild.innerHTML) /// sunday
+
+    /// child to parent
+
+    // const dayOne  = document.querySelector('.day')
+    // console.log(dayOne);  /// sunday
+    // console.log(dayOne.parentElement) /// it will give us the whole parent!!
+
+    /// visit or call siblings
+
+    // const dayOne = document.querySelector('.day')
+    // console.log(dayOne.nextElementSibling) /// monday
+    // console.log(dayOne.nextElementSibling.nextElementSibling) /// tuesday
+
+    // Nodes
+
+    console.log("Nodes : ",par.childNodes)  /// nodelist return but sizze of nodelist is way more than our expectation!!
+</script>
+</html>
