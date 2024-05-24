@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+</head>
+<body style="background-color: #212121;color: aliceblue;">
+    
+</body>
+<script>
+    ///create an element through JS
+
+    const div = document.createElement('div')
+    div.className = "main"
+    div.id = Math.round(Math.random()*10+1)
+    console.log(div)
+    div.style.backgroundColor = "orange"
+    div.style.padding = "12px"
+    div.setAttribute("title","generalized title")
+    // div.innerText = "Chai aur Code"
+    // div.innerText = "Aref"   /// this will overwrite the previous txt
+    const addText = document.createTextNode("Chai aur Code")
+    div.appendChild(addText)
+    div.style.borderRadius = "12px"
+    const add = document.createTextNode(" By Aref")
+    div.appendChild(add) /// by this process it will not overwrite !!
+
+    ///by the above code we just create element which is store in memory not in our window screen where we can see .... 
+    // to see the element we have to write this line
+    document.body.appendChild(div)
+</script>
+</html>
