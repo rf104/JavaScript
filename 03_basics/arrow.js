@@ -47,6 +47,10 @@ const add = (num1 , num2)=>{
 
 // Same Function can be written as which is known as Implecit Return
 
-const addTwo = (num1 , num2) => num1 + num2 /// this is known as Implecit return 
+// const addTwo = (num1 , num2) => num1 + num2 /// this is known as Implecit return 
+// const addTwo = (num1 , num2) => ({username:'Aref'}) /// In arrow function if we try to return object and also implecit return then this way 
+const addTwo = (num1 , num2) => (num1 + num2) /// this is known as Implecit return 
 
 // console.log(addTwo(3,4)); // 7
+
+// If we put {} then must be write explecitly return  but in implecit we just put () then all will work smootly
